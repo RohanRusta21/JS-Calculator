@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="light-dark" >
+        <div class="wrap-toggle">
+            <div id="toggleImage" class="toggleImageLight" onclick="toggleLightDark()" ></div>
+            <input id="toggle-button" type="button" class="toggle-button-light" value="LIGHT" onclick="toggleLightDark()">
+        </div>
+    </div>
+    <div id="container" class="container-light">
+        <div id="calculator" class="calculator-light">
+            <form>
+                <div class="display-container">
+                    <input type="text" name="display" class="display" id="display">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="ac()">
+                    <input type="button" value="DE" onclick="del()">
+                    <input type="button" value="."  onclick="inputValue('.')">
+                    <input type="button" value="/" onclick="inputValue('/')">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="inputValue('7')">
+                    <input type="button" value="8" onclick="inputValue('8')">
+                    <input type="button" value="9" onclick="inputValue('9')">
+                    <input type="button" value="*" onclick="inputValue('*')">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="inputValue('4')">
+                    <input type="button" value="5" onclick="inputValue('5')">
+                    <input type="button" value="6" onclick="inputValue('6')">
+                    <input class="input-light" type="button" value="-" onclick="inputValue('-')">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="inputValue('1')">
+                    <input type="button" value="2" onclick="inputValue('2')">
+                    <input type="button" value="3" onclick="inputValue('3')">
+                    <input type="button" value="+" onclick="inputValue('+')">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="inputValue('00')">
+                    <input type="button" value="0" onclick="inputValue('0')">
+                    <input type="button" value="=" class="equals" onclick="calc()">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+<script src="main.js"></script>
+
+</html>
