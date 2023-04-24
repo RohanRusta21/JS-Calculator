@@ -48,3 +48,4 @@ let ac = () =>{
 let calc = ()=>{
     document.getElementById("display").value = eval(document.getElementById("display").value);
 }
+
